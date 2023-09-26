@@ -1,0 +1,56 @@
+{
+  "name": "phenomine-intellisense",
+  "displayName": "Phenomine Intellisense",
+  "description": "Phenomine Intellisense for Visual Studio Code",
+  "version": "1.0.0",
+  "publisher": "The Phenomine Framework",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Languages"
+  ],
+  "galleryBanner": {
+    "color": "#37474f",
+    "theme": "light"
+  },
+  "bugs": {
+    "url": "https://github.com/phenomine/vscode-extension/issues",
+    "email": "opensource@spentura.com"
+  },
+  "homepage": "https://phenomine.spentura.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phenomine/vscode-extension"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "latte",
+        "aliases": [
+          "Latte",
+          "latte"
+        ],
+        "extensions": [
+          ".latte",
+		  ".latte.php"
+        ],
+        "configuration": "./latte.configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "latte",
+        "scopeName": "source.latte",
+        "path": "./syntaxes/latte.tmLanguage"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "latte",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
